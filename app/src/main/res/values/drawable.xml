@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="imageForegroundRing_Black">@drawable/image_foreground_ring_black</drawable>
+
+    <drawable name="searchIcon_black">@drawable/search_solid_black</drawable>
+    <drawable name="searchIcon_white">@drawable/search_solid_white</drawable>
+
+    <drawable name="backIcon_black">@drawable/arrow_left_solid_black</drawable>
+    <drawable name="backIcon_white">@drawable/arrow_left_solid_white</drawable>
+
+    <drawable name="moreIcon_black">@drawable/ic_more_vert_black_24dp</drawable>
+    <drawable name="moreIcon_white">@drawable/ic_more_vert_white_24dp</drawable>
+
+</resources>

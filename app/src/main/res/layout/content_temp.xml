@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".temp"
+    tools:showIn="@layout/activity_temp">
+
+    <com.github.florent37.materialviewpager.MaterialViewPager
+        android:id="@+id/materialTempViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:viewpager_animatedHeaderImage="true"
+        app:viewpager_color="@android:color/transparent"
+        app:viewpager_disableToolbar="false"
+        app:viewpager_displayToolbarWhenSwipe="false"
+        app:viewpager_enableToolbarElevation="true"
+        app:viewpager_headerAdditionalHeight="2dp"
+        app:viewpager_headerAlpha="1.0"
+        app:viewpager_headerHeight="250dp"
+        app:viewpager_hideLogoWithFade="true"
+        app:viewpager_hideToolbarAndTitle="true"
+        app:viewpager_logo="@layout/header_logo_image"
+        app:viewpager_logoMarginTop="50dp"
+        app:viewpager_parallaxHeaderFactor="1.5"
+        app:viewpager_transparentToolbar="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

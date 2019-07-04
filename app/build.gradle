@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "jattbrand.projectDj6"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        android.defaultConfig.vectorDrawables.useSupportLibrary = true
+        renderscriptTargetApi 28
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0-beta01'
+    implementation 'com.google.android.material:material:1.1.0-alpha07'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0-beta01'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-beta01'
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha06'
+    implementation 'org.jsoup:jsoup:1.12.1'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //Custom Shaped View
+    implementation 'com.github.florent37:shapeofview:1.4.7'
+
+    //For Json Parsing
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //palette library
+    implementation 'androidx.palette:palette:1.0.0'
+
+    //view Pager
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+
+    //drawer
+    implementation 'androidx.drawerlayout:drawerlayout:1.1.0-alpha01'
+
+    //core library
+    implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
+
+    //ultra-ViewPager
+    implementation('com.alibaba.android:ultraviewpager:1.0.7.7@aar') {
+        transitive = true
+    }
+
+    //volley for fetching data from url
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.github.florent37:materialviewpager:1.2.3'
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+    implementation 'com.jpardogo.materialtabstrip:library:1.1.1'
+    implementation 'com.jackandphantom.android:blurimage:1.2.0'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+}

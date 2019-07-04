@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jattbrand.projectDj6.Adapters.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logo_white_image"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/materialviewpager_logoHeight"
+    android:text="Latest Punjabi Single Tracks"
+    android:textSize="30sp"
+    android:textColor="@android:color/white"/>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/choices_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/card_RelativeView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBlack"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/trending_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/red"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/trending_image"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="8dp"
+                        app:srcCompat="@drawable/medal_solid" />
+
+                    <jattbrand.projectDj6.Adapters.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_alignTop="@+id/trending_image"
+                        android:layout_alignBottom="@+id/trending_image"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="-2dp"
+                        android:layout_toEndOf="@+id/trending_image"
+                        android:gravity="center|start"
+                        android:text="Trending"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/latest_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/green_teal"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/latest_image"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="8dp"
+                        android:contentDescription="TODO"
+                        app:srcCompat="@drawable/medal_solid" />
+
+                    <jattbrand.projectDj6.Adapters.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_alignTop="@+id/latest_image"
+                        android:layout_alignBottom="@+id/latest_image"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="-2dp"
+                        android:layout_toEndOf="@+id/latest_image"
+                        android:gravity="center|start"
+                        android:text="Latest"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/recommended_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/recommended_image"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="8dp"
+                        app:srcCompat="@drawable/medal_solid" />
+
+                    <jattbrand.projectDj6.Adapters.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_alignTop="@+id/recommended_image"
+                        android:layout_alignBottom="@+id/recommended_image"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="-2dp"
+                        android:layout_toEndOf="@+id/recommended_image"
+                        android:gravity="center|start"
+                        android:text="Recommended"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/top20_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@android:color/holo_orange_dark"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/top20_image"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="8dp"
+                        app:srcCompat="@drawable/info_solid" />
+
+                    <jattbrand.projectDj6.Adapters.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_alignTop="@+id/top20_image"
+                        android:layout_alignBottom="@+id/top20_image"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="-2dp"
+                        android:layout_toEndOf="@+id/top20_image"
+                        android:gravity="center|start"
+                        android:text="Top 20"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.tmall.ultraviewpager.UltraViewPager
+        android:id="@+id/ultraViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorBlack"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/card_RelativeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <jattbrand.projectDj6.Adapters.CustomTextView
+            android:id="@+id/main_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/toolbar_shadow"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="TextView"
+            android:textColor="@color/whiteCream"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/horizontalRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:clipToPadding="true">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

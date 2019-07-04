@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item
+        android:icon="@drawable/ic_music_video_black_24dp"
+        android:title="Popular On Youtube" />
+
+    <item
+        android:id="@+id/nav_localMusic"
+        android:icon="@drawable/ic_music_note_black_24dp"
+        android:title="Local Music" />
+
+    <item
+        android:icon="@drawable/ic_library_music_black_24dp"
+        android:title="Playlists" />
+    <item
+        android:icon="@android:drawable/stat_sys_download_done"
+        android:title="Downloads" />
+    <item
+        android:icon="@drawable/ic_mic_black_24dp"
+        android:title="Suggest A Song" />
+    <item
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Settings"></item>
+
+    <item
+        android:menuCategory="system"
+        android:title="---------Contact---------"
+        android:visible="true">
+        <menu>
+            <item
+                android:icon="@drawable/ic_mail_outline_black_24dp"
+                android:title="Feedback" />
+            <item
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="About Dev" />
+        </menu>
+    </item>
+
+</menu>
